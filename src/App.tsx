@@ -1,3 +1,4 @@
+import DocsCanvas from './components/docs-canvas';
 import TestCanvas from './components/test-canvas';
 
 const App = () => {
