@@ -1,10 +1,14 @@
-import DocsCanvas from './components/docs-canvas';
-import TestCanvas from './components/test-canvas';
+import LayoutCanvas from './components/canvas/layout-canvas';
+import DiceScene from './components/dice-scene';
 
 const App = () => {
   return (
     <div className="App">
-      <TestCanvas />
+      <div className="w-screen h-screen">
+        <LayoutCanvas>
+          <DiceScene />
+        </LayoutCanvas>
+      </div>
     </div>
   );
 };
