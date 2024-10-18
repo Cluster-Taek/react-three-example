@@ -1,5 +1,5 @@
 import LayoutCanvas from './components/canvas/layout-canvas';
-import DiceScene from './components/dice-scene';
+import DiceScene from './components/scene/dice-scene';
 
 const App = () => {
   return (
