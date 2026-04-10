@@ -12,7 +12,6 @@ const LayoutCanvas = ({ children }: PropsWithChildren) => {
         position: [5, 20, 10],
         fov: 45,
         zoom: 0.5,
-        aspect: window.innerWidth / window.innerHeight,
         near: 0.1,
         far: 1000,
       }}
@@ -26,7 +25,7 @@ const LayoutCanvas = ({ children }: PropsWithChildren) => {
       <ambientLight intensity={1}/>
 
       <Suspense>
-        <Physics gravity={[0, -9.8, 0]} debug>{children}</Physics>
+        <Physics gravity={[0, -9.8, 0]}>{children}</Physics>
       </Suspense>
     </Canvas>
   );
